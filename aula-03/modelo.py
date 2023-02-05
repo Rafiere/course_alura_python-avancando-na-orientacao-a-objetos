@@ -53,3 +53,11 @@ print(
 
 atlanta = Serie('Atlanta', 2018, 2)
 print(f'Nome: {atlanta.nome} - Ano: {atlanta.ano} - Temporadas: {atlanta.temporadas} - Likes: {atlanta.likes}')
+
+print("\n")
+
+filmes_e_series = [vingadores, atlanta]
+
+for programa in filmes_e_series:
+    print(
+        f'Nome: {programa.nome} - Ano: {programa.ano} - Likes: {programa.likes} - Temporada: {programa.temporadas if hasattr(programa, "temporadas") else "Não tem temporadas."}')
